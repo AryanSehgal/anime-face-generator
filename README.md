@@ -1,17 +1,5 @@
 # Anime Face Generator BTP
 
-Contributors :-
-
-##### Aryan Sehgal    - 2019UCS2019
-
-##### Sourabh         - 2019UCS2025
-
-##### Aditya Divyang  - 2019UCS2012
-
-##### M Aman Chaudhry - 2019UCS2020
-
-<hr style="border:2px solid gray">
-
 Animations play an important role in our daily life and have been widely used in entertainment, social, and educational applications. We aim to automatically translate a photo-face into an anime-face based on the styles of a reference anime-face. We refer to such a task as Style-Guided Face-to-Anime Translation (StyleFAT). 
 
 We implement a generator architecture that preserves the global information (e.g., pose) of a source photo-face, while transforming local facial shapes into anime-like ones and transferring colors/textures based on the style of a reference anime-face. Our insight is that the local shapes (e.g., large and round eyes) can be treated as a kind of style like color/texture. In this way, transforming a face’s local shapes can be achieved via style transfer. To transform local facial shapes via style transfer, we explore where to inject the style information into the generator. In particular, the multi-layer feature maps extracted by the decoder represent multi-level semantics (i.e., from high-level structural information to low-level textural information). Our generator therefore injects the style information into the multi-level feature maps of the decoder. Guided the injected style information and different levels of feature maps, our generator adaptively learns to transfer color/texture styles and transform local facial shapes.
